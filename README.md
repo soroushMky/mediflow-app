@@ -187,8 +187,6 @@ Part of a UX/product design portfolio. See the full written case study (research
 
 ---
 
-<div align="center">
-
-*Built with Figma, Figma Motion, Visily, and a lot of back-and-forth on what "trust" actually looks like on a screen.*
+<div align="left">
 
 </div>

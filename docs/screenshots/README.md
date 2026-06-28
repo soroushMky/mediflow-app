@@ -2,18 +2,15 @@
 
 ![MediFlow banner](docs/banner.svg)
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Site-4C8DFF?style=for-the-badge)](https://your-site-name.netlify.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Site-4C8DFF?style=for-the-badge)](https://medicalflow-app.netlify.app)
 ![Status](https://img.shields.io/badge/Status-Concept%20Prototype-3DDC91?style=flat-square)
 ![Stack](https://img.shields.io/badge/Stack-HTML%20·%20CSS%20·%20JS%20·%20React-1F2937?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-9CA3AF?style=flat-square)
 
-**A clinical documentation assistant for therapists — designed around the one thing every competitor skipped: making an AI-generated note fast to *trust*, not just fast to *generate*.**
-
 </div>
 
-> (https://medicalflow-app.netlify.app/)
+>
 
----
 
 ## Table of contents
 

@@ -91,7 +91,6 @@ Today's appointments, with real cancel/restore actions and a working booking for
 
 ![Scheduling screenshot](docs/screenshots/scheduling.png)
 
-*(Screenshots not generated yet — see [`docs/screenshots/README.md`](docs/screenshots/README.md) for exactly how to add them from the live site.)*
 
 ## Design system
 
@@ -184,7 +183,7 @@ What's real vs. what's intentionally a sketch, stated plainly:
 
 Designed and built as a UX case study exploring AI documentation trust, for therapists specifically, over a focused one-week sprint — research, flow mapping, wireframe synthesis, and high-fidelity design with motion.
 
-Part of a UX/product design portfolio. See the full written case study (research process, wireframe iterations, key design decisions) at **[link to your portfolio case study]**.
+Part of a UX/product design portfolio. See the full written case study (research process, wireframe iterations, key design decisions) at **[(https://soroush-merikhy.netlify.app/)]**.
 
 ---
 

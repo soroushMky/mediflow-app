@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MediFlow — Draft review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body data-page="draft">
+  <div id="vanta-bg" aria-hidden="true"></div>
+
+
+  <div class="shell">
+
+    <header class="topbar">
+      <div class="topleft">
+        <div class="logo">
+          <span class="mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 12h4l2-7 4 14 3-9 2 4h3" />
+            </svg>
+          </span>
+          <span class="name">MediFlow</span>
+        </div>
+        <nav aria-label="Workflow steps">
+          <ul class="navpill">
+            <li class="navitem" data-view="draft">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M6 4h9l3 3v13H6z" />
+                <path d="M9 9h6M9 13h6M9 17h4" />
+              </svg>
+              Draft review
+            </li>
+            <li class="navitem" data-view="signoff">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M8 12l3 3 5-6" />
+              </svg>
+              Sign-off
+            </li>
+            <li class="navitem" data-view="filed">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M3 7h6l2 2h10v10H3z" />
+              </svg>
+              Note filed
+            </li>
+            <li class="navitem" data-view="profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <circle cx="12" cy="8" r="3.5" />
+                <path d="M5 20c0-4 3-6 7-6s7 2 7 6" />
+              </svg>
+              Patient profile
+            </li>
+            <li class="navitem" data-view="scheduling">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <rect x="4" y="5" width="16" height="16" rx="2" />
+                <path d="M4 10h16M8 3v4M16 3v4" />
+              </svg>
+              Scheduling
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="topright">
+        <div class="search" role="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M21 21l-4-4" />
+          </svg>
+          Search session notes…
+        </div>
+        <button class="iconbtn" aria-label="Call patient">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M5 4h3l2 5-2.5 1.5a12 12 0 006 6L15 14l5 2v3a2 2 0 01-2 2C9.5 21 3 14.5 3 6a2 2 0 012-2z" />
+          </svg>
+        </button>
+        <button class="iconbtn" aria-label="Notifications, 1 unread">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M12 3a5 5 0 00-5 5v3l-2 4h14l-2-4V8a5 5 0 00-5-5z" />
+            <path d="M9 19a3 3 0 006 0" />
+          </svg>
+          <span class="dot" aria-hidden="true"></span>
+        </button>
+        <div class="avatar" role="img" aria-label="Signed in as Dr. S. Jenkins">SJ</div>
+      </div>
+    </header>
+
+    <div class="patientbar">
+      <span><b>Sarah Jenkins</b></span>
+      <span>Session · Oct 24, 2026 · 2:15 PM</span>
+      <span class="tag">AI-generated draft</span>
+    </div>
+
+    <main class="grid">
+
+      <section class="card" aria-labelledby="draft-heading">
+        <div class="scorebar">
+          <h3 id="draft-heading" style="margin:0;">Clinical encounter draft</h3>
+          <span class="score">92%</span>
+        </div>
+
+        <ul class="notelist" aria-label="AI-generated note, tap a line to verify against the recording">
+
+          <li class="noteitem" data-expanded="false">
+            <button class="head" aria-expanded="false" aria-controls="t1">
+              <div class="headtext">
+                <div class="sectionrow"><span class="sectionlabel">Subjective</span></div>
+                <div class="linetext">Patient reports improved sleep, averaging 7 hours nightly, with mild residual
+                  anxiety before morning sessions.</div>
+              </div>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+            <div class="transcript" id="t1">
+              <div class="meta mono">SOURCE · 04:12</div>
+              <div class="quote">"Yeah, sleep's been a lot better, maybe seven hours most nights. Still a bit anxious
+                right before we start, though."</div>
+              <div class="lineactions">
+                <button type="button" data-placeholder="Saved">Confirm accuracy</button>
+                <button type="button" data-placeholder="Opens edit mode">Refine phrasing</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="noteitem" data-expanded="false">
+            <button class="head" aria-expanded="false" aria-controls="t2">
+              <div class="headtext">
+                <div class="sectionrow"><span class="sectionlabel">Objective</span></div>
+                <div class="linetext">Affect congruent, speech regular pace, no acute distress observed.</div>
+              </div>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+            <div class="transcript" id="t2">
+              <div class="meta mono">SOURCE · 11:30</div>
+              <div class="quote">"I feel like I'm finally getting some control over it, instead of it controlling me."
+              </div>
+              <div class="lineactions">
+                <button type="button" data-placeholder="Saved">Confirm accuracy</button>
+                <button type="button" data-placeholder="Opens edit mode">Refine phrasing</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="noteitem" data-expanded="false">
+            <button class="head" aria-expanded="false" aria-controls="t3">
+              <div class="headtext">
+                <div class="sectionrow">
+                  <span class="sectionlabel">Assessment</span>
+                  <span class="chip idle" style="padding:2px 8px;">Needs review</span>
+                </div>
+                <div class="linetext">Generalized anxiety, gradually improving with current approach.</div>
+              </div>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+            <div class="transcript" id="t3">
+              <div class="meta mono">SOURCE · 19:05</div>
+              <div class="quote">"I think the breathing thing really does help when work gets stressful."</div>
+              <div class="lineactions">
+                <button type="button" data-placeholder="Saved">Confirm accuracy</button>
+                <button type="button" data-placeholder="Opens edit mode">Refine phrasing</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="noteitem" data-expanded="false">
+            <button class="head" aria-expanded="false" aria-controls="t4">
+              <div class="headtext">
+                <div class="sectionrow"><span class="sectionlabel">Plan</span></div>
+                <div class="linetext">Continue weekly sessions, introduce grounding exercise homework, follow up in 7
+                  days.</div>
+              </div>
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+            <div class="transcript" id="t4">
+              <div class="meta mono">SOURCE · 26:48</div>
+              <div class="quote">"Let's try adding a grounding exercise for home, and check in again next week."</div>
+              <div class="lineactions">
+                <button type="button" data-placeholder="Saved">Confirm accuracy</button>
+                <button type="button" data-placeholder="Opens edit mode">Refine phrasing</button>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+      <aside aria-label="Quick actions and review status">
+
+        <div class="card" style="margin-bottom:14px;">
+          <h3 style="margin-bottom:10px;">Quick actions</h3>
+          <div class="actionlist">
+            <button type="button" data-toggle aria-pressed="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M6 4v16" />
+                <path d="M6 4h11l-3 4 3 4H6" />
+              </svg>
+              Flag urgent
+            </button>
+            <button type="button" data-placeholder="Opens specialist directory">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <circle cx="9" cy="8" r="3.5" />
+                <path d="M3 20c0-4 2.5-6 6-6s6 2 6 6" />
+                <path d="M18 9v4M16 11h4" />
+              </svg>
+              Request consultation
+            </button>
+            <button type="button" data-placeholder="Opens ICD-10 search">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M5 9h14M5 15h14M10 4L8 20M16 4l-2 16" />
+              </svg>
+              Add diagnosis code
+            </button>
+          </div>
+
+          <div class="reflist">
+            <div class="refrow"><span class="k">Model</span><span class="v mono">MediFlow AI v2.4</span></div>
+            <div class="refrow"><span class="k">Confidence</span><span class="v accent-green">92%</span></div>
+            <div class="refrow"><span class="k">Word count</span><span class="v">184</span></div>
+          </div>
+        </div>
+
+        <div class="hero">
+          <div class="label mono">REVIEW PROGRESS</div>
+          <div class="big">3 of 4 lines</div>
+          <div class="progressbar"><span style="width:75%;"></span></div>
+          <div class="compare mono" style="margin-top:10px;"><span>CONFIRMED</span><span>75%</span></div>
+        </div>
+
+        <a class="btn primary navlink" style="display:block;text-align:center;" href="sign-off.html">Finalize note</a>
+      </aside>
+
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

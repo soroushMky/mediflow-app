@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MediFlow — Patient profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body data-page="profile">
+  <div id="vanta-bg" aria-hidden="true"></div>
+
+
+  <div class="shell">
+
+    <header class="topbar">
+      <div class="topleft">
+        <div class="logo">
+          <span class="mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 12h4l2-7 4 14 3-9 2 4h3" />
+            </svg>
+          </span>
+          <span class="name">MediFlow</span>
+        </div>
+        <nav aria-label="Workflow steps">
+          <ul class="navpill">
+            <li class="navitem" data-view="draft">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M6 4h9l3 3v13H6z" />
+                <path d="M9 9h6M9 13h6M9 17h4" />
+              </svg>
+              Draft review
+            </li>
+            <li class="navitem" data-view="signoff">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M8 12l3 3 5-6" />
+              </svg>
+              Sign-off
+            </li>
+            <li class="navitem" data-view="filed">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M3 7h6l2 2h10v10H3z" />
+              </svg>
+              Note filed
+            </li>
+            <li class="navitem" data-view="profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <circle cx="12" cy="8" r="3.5" />
+                <path d="M5 20c0-4 3-6 7-6s7 2 7 6" />
+              </svg>
+              Patient profile
+            </li>
+            <li class="navitem" data-view="scheduling">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <rect x="4" y="5" width="16" height="16" rx="2" />
+                <path d="M4 10h16M8 3v4M16 3v4" />
+              </svg>
+              Scheduling
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="topright">
+        <div class="search" role="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M21 21l-4-4" />
+          </svg>
+          Search session notes…
+        </div>
+        <button class="iconbtn" aria-label="Call patient">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M5 4h3l2 5-2.5 1.5a12 12 0 006 6L15 14l5 2v3a2 2 0 01-2 2C9.5 21 3 14.5 3 6a2 2 0 012-2z" />
+          </svg>
+        </button>
+        <button class="iconbtn" aria-label="Notifications, 1 unread">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M12 3a5 5 0 00-5 5v3l-2 4h14l-2-4V8a5 5 0 00-5-5z" />
+            <path d="M9 19a3 3 0 006 0" />
+          </svg>
+          <span class="dot" aria-hidden="true"></span>
+        </button>
+        <div class="avatar" role="img" aria-label="Signed in as Dr. S. Jenkins">SJ</div>
+      </div>
+    </header>
+
+    <div class="patientbar">
+      <span><b>Sarah Jenkins</b></span>
+      <span>45 · Follow-up: Generalized anxiety</span>
+      <span class="tag">Up next</span>
+    </div>
+
+    <main class="grid">
+
+      <div>
+        <section class="card" aria-labelledby="history-heading">
+          <h3 id="history-heading">Appointment history</h3>
+
+          <ul class="notelist" aria-label="Past appointments, tap to view recap">
+
+            <li class="noteitem" data-expanded="false">
+              <button class="head" aria-expanded="false" aria-controls="h1">
+                <div class="headtext">
+                  <div class="sectionrow"><span class="sectionlabel">Oct 24, 2026</span></div>
+                  <div class="linetext">Follow-up — most recent session</div>
+                </div>
+                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </button>
+              <div class="transcript" id="h1">
+                <div class="quote">Sleep improved to ~7 hours nightly; mild residual anxiety before sessions. Continued
+                  weekly cadence, grounding exercise assigned as homework.</div>
+              </div>
+            </li>
+
+            <li class="noteitem" data-expanded="false">
+              <button class="head" aria-expanded="false" aria-controls="h2">
+                <div class="headtext">
+                  <div class="sectionrow"><span class="sectionlabel">Oct 10, 2026</span></div>
+                  <div class="linetext">Follow-up</div>
+                </div>
+                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </button>
+              <div class="transcript" id="h2">
+                <div class="quote">Reported difficulty falling asleep and racing thoughts at night. Introduced a
+                  structured breathing technique to use before bed.</div>
+              </div>
+            </li>
+
+            <li class="noteitem" data-expanded="false">
+              <button class="head" aria-expanded="false" aria-controls="h3">
+                <div class="headtext">
+                  <div class="sectionrow"><span class="sectionlabel">Sep 26, 2026</span></div>
+                  <div class="linetext">Initial follow-up</div>
+                </div>
+                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </button>
+              <div class="transcript" id="h3">
+                <div class="quote">Discussed onset of work-related anxiety, particularly around morning meetings. Began
+                  weekly CBT-based sessions.</div>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+        <section class="card sectiongap" aria-labelledby="problems-heading">
+          <h3 id="problems-heading">Problems tracked</h3>
+          <div class="problemlist">
+            <div class="problemrow">
+              <span class="label">Sleep disturbance</span>
+              <button type="button" class="statuschip resolved" aria-pressed="false">Resolved</button>
+            </div>
+            <div class="problemrow">
+              <span class="label">Work-related anxiety</span>
+              <button type="button" class="statuschip ongoing" aria-pressed="true">Ongoing</button>
+            </div>
+            <div class="problemrow">
+              <span class="label">Avoidance of morning meetings</span>
+              <button type="button" class="statuschip ongoing" aria-pressed="true">Ongoing</button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside aria-label="Visit prep">
+
+        <div class="hero">
+          <div class="label mono">UP NEXT</div>
+          <div class="big">12 min</div>
+          <div class="compare mono"><span>ROOM</span><span>4</span></div>
+        </div>
+
+        <div class="card sectiongap" style="margin-bottom:14px;">
+          <h3 style="margin-bottom:10px;">Prescriptions</h3>
+          <div class="reflist">
+            <div class="refrow"><span class="k">Sertraline 50mg</span><span class="v">Once daily, AM, with food</span>
+            </div>
+            <div class="refrow"><span class="k">Hydroxyzine 25mg</span><span class="v">PRN, max 2× daily</span></div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:14px;">
+          <h3 style="margin-bottom:10px;">Pre-visit notes</h3>
+          <textarea class="notesbox" placeholder="Add a note before this session…"></textarea>
+        </div>
+
+        <div class="card" style="margin-bottom:14px;">
+          <h3 style="margin-bottom:10px;">Relevant documents</h3>
+          <div class="reflist">
+            <div class="refrow"><span class="k">Psychiatry consult summary</span><span class="v">Sep 02</span></div>
+            <div class="refrow"><span class="k">Intake assessment</span><span class="v">Aug 15</span></div>
+          </div>
+        </div>
+
+        <a class="btn primary navlink" style="display:block;text-align:center;" href="draft-review.html">Start
+          session</a>
+      </aside>
+
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

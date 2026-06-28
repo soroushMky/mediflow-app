@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MediFlow — Sign-off</title>
+  <title>MediFlow — Note filed</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 
-<body data-page="signoff">
+<body data-page="filed">
   <div id="vanta-bg" aria-hidden="true"></div>
 
 
@@ -97,84 +97,72 @@
     <div class="patientbar">
       <span><b>Sarah Jenkins</b></span>
       <span>Session · Oct 24, 2026 · 2:15 PM</span>
-      <span class="tag">AI-assisted</span>
+      <span class="tag">Finalized</span>
     </div>
 
     <main class="grid">
 
-      <section class="card" aria-labelledby="summary-heading">
-        <h3 id="summary-heading">Clinical encounter summary</h3>
+      <section class="card" aria-labelledby="filed-heading">
+        <div class="successhead">
+          <span class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M8 12l3 3 5-6" />
+            </svg>
+          </span>
+          <h3 id="filed-heading">Clinical note filed</h3>
+        </div>
+        <p class="subtext">Documentation for Sarah Jenkins has been committed to the record.</p>
 
-        <p class="note-line"><b>Subjective —</b> <span>Patient reports steadier sleep this week, mild residual anxiety
-            before morning sessions.</span></p>
-        <p class="note-line"><b>Objective —</b> <span>Affect congruent, speech regular pace, no acute distress
-            observed.</span></p>
-        <p class="note-line"><b>Assessment —</b> <span>Generalized anxiety, gradually improving with current
-            approach.</span></p>
-        <p class="note-line"><b>Plan —</b> <span>Continue weekly sessions, introduce grounding exercise homework, follow
-            up in 7 days.</span></p>
+        <div class="reflist">
+          <div class="refrow"><span class="k">Patient</span><span class="v">Sarah Jenkins</span></div>
+          <div class="refrow"><span class="k">Document type</span><span class="v">SOAP progress note</span></div>
+          <div class="refrow"><span class="k">Encounter date</span><span class="v">Oct 24, 2026, 2:15 PM</span></div>
+          <div class="refrow"><span class="k">Reference ID</span><span class="v mono">MF-2026-0042</span></div>
+        </div>
 
-        <ul class="chiprow" aria-label="Verification checklist">
-          <li class="chip blue">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
-              <path d="M5 13l4 4L19 7" />
+        <h3 style="margin-bottom:10px;">Carried-over action items</h3>
+        <ul class="chiprow" aria-label="Items flagged during review">
+          <li class="chip idle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="8" />
             </svg>
-            Billing mapped
-          </li>
-          <li class="chip green">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
-              <path d="M5 13l4 4L19 7" />
-            </svg>
-            Medications reconciled
-          </li>
-          <li class="chip blue">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
-              <path d="M5 13l4 4L19 7" />
-            </svg>
-            Follow-up scheduled
+            Confirm medication dosage at next contact
           </li>
           <li class="chip idle">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <circle cx="12" cy="12" r="8" />
             </svg>
-            Signature pending
+            Add updated emergency contact
           </li>
         </ul>
       </section>
 
-      <aside aria-label="Session summary and sign-off actions">
+      <aside aria-label="Session metrics and next actions">
         <div class="hero">
-          <div class="label mono">SESSION TIME</div>
-          <div class="big">4m 12s</div>
+          <div class="label mono">EFFICIENCY GAINED</div>
+          <div class="big">38% faster</div>
           <svg class="sparkline" viewBox="0 0 240 36" width="100%" height="36" aria-hidden="true">
             <path d="M0 24 Q20 8 35 24 T70 18 T105 26 T140 10 T175 22 T210 16 T240 20" fill="none"
               stroke="rgba(255,255,255,0.9)" stroke-width="2" />
           </svg>
-          <div class="compare mono"><span>YOUR AVG</span><span>6m 45s</span></div>
+          <div class="compare mono"><span>4M 12S</span><span>VS 6M 45S</span></div>
         </div>
 
         <div class="minigrid">
           <div class="mini">
-            <div class="l">Accuracy</div>
-            <div class="v accent-blue">94%</div>
+            <div class="l">Up next in</div>
+            <div class="v accent-blue">12 min</div>
           </div>
           <div class="mini">
-            <div class="l">Confidence</div>
-            <div class="v accent-green">High</div>
+            <div class="l">Filed today</div>
+            <div class="v accent-green">6</div>
           </div>
         </div>
 
-        <p class="lockline">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-            <rect x="5" y="11" width="14" height="9" rx="2" />
-            <path d="M8 11V8a4 4 0 018 0v3" />
-          </svg>
-          Locked for editing once signed
-        </p>
-
-        <a class="btn ghost navlink" style="display:block;text-align:center;" href="draft-review.html">Modify draft</a>
-        <a class="btn primary navlink" style="display:block;text-align:center;" href="note-filed.html">Confirm &amp;
-          sign off</a>
+        <a class="btn primary navlink" style="display:block;text-align:center;" href="patient-profile.html">Go to next
+          patient</a>
+        <a class="linklike navlink" style="display:block;" href="sign-off.html">Back to sign-off</a>
       </aside>
 
     </main>

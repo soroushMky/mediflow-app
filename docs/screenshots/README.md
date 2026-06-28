@@ -11,7 +11,7 @@
 
 </div>
 
-> ⚠️ Replace the Live Demo badge link above with your actual Netlify URL once you have it.
+> (https://medicalflow-app.netlify.app/)
 
 ---
 
